@@ -821,3 +821,13 @@ Before creating a project, choose one package from `packages/`:
 - `medium-large-modular-web` for long-lived products that need modular boundaries, shared contracts, and a frontend that can grow without becoming loose global JavaScript.
 
 The package choice should be recorded in the new project's `README.md` and initial `AGENTS.md` so future agents know the intended architecture.
+
+## AGENTS.md Package Contract Block
+
+When creating a new project, copy the selected package into the generated project's `AGENTS.md` as an explicit startup-visible contract. Use:
+
+```text
+templates/agents/AGENTS_PACKAGE_SELECTION_BLOCK.md
+```
+
+For `medium-large-modular-web`, the generated `AGENTS.md` must say the project is governed by `medium-large-modular-web`, route agents to the project coding paradigm file, and state that Validator, Builder, and Editor enforce the selected package boundary.

@@ -57,3 +57,7 @@ Every package should preserve the agent-ready baseline:
 Package selection is an agent contract, not just a folder preference.
 
 For new projects, Validator records the selected package in the initial project directive and `AGENTS.md`. Builder follows that package's boundaries during implementation. Editor reviews for drift from the selected package. If a project needs to move from `small-node-static-web` to `medium-large-modular-web`, Validator must authorize the migration explicitly.
+
+## Generated AGENTS.md Requirement
+
+Every generated project must include the selected package in `AGENTS.md`. Use `templates/agents/AGENTS_PACKAGE_SELECTION_BLOCK.md` so agents see the coding paradigm during startup instead of discovering it after code has already been written.
