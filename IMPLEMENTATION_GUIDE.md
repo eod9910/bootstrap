@@ -831,3 +831,15 @@ templates/agents/AGENTS_PACKAGE_SELECTION_BLOCK.md
 ```
 
 For `medium-large-modular-web`, the generated `AGENTS.md` must say the project is governed by `medium-large-modular-web`, route agents to the project coding paradigm file, and state that Validator, Builder, and Editor enforce the selected package boundary.
+
+## Role Bootloader Requirement
+
+Generated `AGENTS.md` files must explicitly route agents to their role documents before role behavior is trusted:
+
+```text
+agent-relay/roles/Validator/ROLE.md
+agent-relay/roles/Builder/ROLE.md
+agent-relay/roles/Editor/ROLE.md
+```
+
+This is how the generated project wakes up Validator, Builder, and Editor with the coding paradigm and role-specific enforcement rules already loaded.

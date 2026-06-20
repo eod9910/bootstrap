@@ -5,6 +5,17 @@ Add this block near the top of a generated project's `AGENTS.md`, after startup/
 Replace `<selected-package>` and `<project-coding-paradigm-file>` during project creation.
 
 ```markdown
+## Role Bootloader
+
+`AGENTS.md` instantiates the role workflow by routing each agent to the role documents it must obey:
+
+- Validator reads `agent-relay/roles/Validator/ROLE.md` before freezing requirements, writing directives, judging Builder/Editor reports, or accepting work.
+- Builder reads `agent-relay/roles/Builder/ROLE.md` before implementing any Validator directive.
+- Editor reads `agent-relay/roles/Editor/ROLE.md` before reviewing, simplifying, refactoring, or marking an `EDITOR BLOCKER`.
+- When one running agent is mediating the roles, it must read all three role documents before routing or simulating role handoffs.
+```
+
+```markdown
 ## Project Coding Paradigm
 
 - This project is governed as `<selected-package>`.
@@ -16,6 +27,17 @@ Replace `<selected-package>` and `<project-coding-paradigm-file>` during project
 ```
 
 For a `medium-large-modular-web` project, use:
+
+```markdown
+## Role Bootloader
+
+`AGENTS.md` instantiates the role workflow by routing each agent to the role documents it must obey:
+
+- Validator reads `agent-relay/roles/Validator/ROLE.md` before freezing requirements, writing directives, judging Builder/Editor reports, or accepting work.
+- Builder reads `agent-relay/roles/Builder/ROLE.md` before implementing any Validator directive.
+- Editor reads `agent-relay/roles/Editor/ROLE.md` before reviewing, simplifying, refactoring, or marking an `EDITOR BLOCKER`.
+- When one running agent is mediating the roles, it must read all three role documents before routing or simulating role handoffs.
+```
 
 ```markdown
 ## Project Coding Paradigm
