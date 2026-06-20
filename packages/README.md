@@ -51,3 +51,9 @@ Every package should preserve the agent-ready baseline:
 - Validator/Builder/Editor role contracts when tri-agent governance is enabled;
 - router workflow when relay routing is enabled;
 - one clear verification command after creation.
+
+## Enforcement
+
+Package selection is an agent contract, not just a folder preference.
+
+For new projects, Validator records the selected package in the initial project directive and `AGENTS.md`. Builder follows that package's boundaries during implementation. Editor reviews for drift from the selected package. If a project needs to move from `small-node-static-web` to `medium-large-modular-web`, Validator must authorize the migration explicitly.
